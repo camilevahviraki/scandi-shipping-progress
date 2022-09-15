@@ -18,7 +18,7 @@ class CheckoutProgress extends Component {
         step = 1;
     }else if (progressLink.toLowerCase().includes('billing')&& cartLength !== 0) {
         step = 2;
-    }else if( cartLength === 0){
+    }else if( cartLength === 0 || progressLink.toLowerCase().includes('success')){
         step = 3;
     }
    
