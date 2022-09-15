@@ -37,7 +37,7 @@ class CheckoutProgress extends Component {
              <div block="Progress" elem={step >= 2? "slide" :"slide-none"} style={{animationDelay: '2.5s'}}></div>
               </div>
              <div block="Progress" elem="Step Step2">
-               <div block="Progress" elem={step >= 2? "Step-Span" :"Step-Span-full"}><span>2</span></div>
+               <div block="Progress" elem={step >= 2? "Step-Span" :"Step-Span-full"}><span>{step >= 3? "V" :"2"}</span></div>
                <h4 block="Progress" elem={step >= 2? "title" :"title-full"}>Reviews {'&'} Payments</h4>
             </div> 
              <div block="Progress" elem={step > 2? "bar" :"bar-full"}>
